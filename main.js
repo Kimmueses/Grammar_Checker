@@ -5,6 +5,49 @@ let unnecessaryWord = 'literally';
 let misspelledWord = 'beautifull';
 let badWord = 'freaking';
 
+let count = 0;
+
+storyWords.forEach((word) => {
+    count++;
+});
+
+console.log(count);
+
+storyWords = storyWords.filter((word) => {
+    return word !== unnecessaryWord
+});
+
+storyWords = storyWords.map((word) => {
+    if(word === misspelledWord) {
+        return "beautiful";
+    } else {
+        return word;
+    }
+});
+
+const badWordIndex = storyWords.findIndex((word) => {
+    return word === badWord 
+});
+
+storyWords[78] = 'really';
+
+let lengthCheck = storyWords.every((word) =>{
+    return word.length < 10
+});
+
+let longWord = storyWords.findIndex((word) => {
+    return word.length > 10
+});
+
+storyWords[111] = 'glorious';
+
+//console.log(longWord);
+
+//console.log(lengthCheck);
+
+//console.log(badWordIndex);
+
+console.log(storyWords.join(' '));
 
 
 

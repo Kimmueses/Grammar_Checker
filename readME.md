@@ -64,7 +64,7 @@ Now that we’ve removed the unnecessary words, let’s take care of any misspel
 
 Reassign storyWords to equal the invocation of the .map() method on the storyWords array.
 
-Setword as a parameter of .map()‘s callback function.
+Set word as a parameter of .map()‘s callback function.
 
 In the callback’s body, define a conditional statement to check if the word argument is equal to the misspelledWord variable. If it is, return the correct spelling of the string, “beautiful”. If not, return word.
 
